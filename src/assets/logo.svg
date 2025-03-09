@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <!-- Background Circle -->
+  <circle cx="16" cy="16" r="15" fill="#1E1E1E"/>
+  <circle cx="16" cy="16" r="14" fill="#262626"/>
+  
+  <text x="16" y="20" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="white" text-anchor="middle">CL</text>
+  
+  <circle cx="24" cy="12" r="1.5" fill="#7CFC00"/>
+  
+  <path d="M10 22 L22 22" stroke="#7CFC00" stroke-width="1" stroke-linecap="round"/>
+</svg>
