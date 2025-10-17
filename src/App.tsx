@@ -1,4 +1,3 @@
-import "./App.css";
 import AppContent from "./components/AppContent";
 import Footer from "./components/home/Footer";
 import { RouteParameterProvider } from "./context/RouteParameter";

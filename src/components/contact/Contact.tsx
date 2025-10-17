@@ -33,7 +33,7 @@ export default function Contact() {
                 </div>
                 <div>
                   <p className="text-sm text-gray-800">Location</p>
-                  <p className="font-semibold">Nakhon Ratchasima, Thailand</p>
+                  <p className="font-semibold">Bangkok, Thailand</p>
                 </div>
               </div>
             </div>
