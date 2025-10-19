@@ -1,4 +1,6 @@
-import { Mail, MapPin, Github, Linkedin } from "lucide-react";
+import { Mail, MapPin } from "lucide-react";
+import ContactLink from "./ContactLink";
+import { contactDetails } from "../../constants/info";
 
 export default function Contact() {
   return (
@@ -23,7 +25,7 @@ export default function Contact() {
                 </div>
                 <div>
                   <p className="text-sm text-gray-800">Email</p>
-                  <p className="font-semibold">chitchanok@example.com</p>
+                  <p className="font-semibold">{contactDetails.email}</p>
                 </div>
               </div>
 
@@ -33,7 +35,7 @@ export default function Contact() {
                 </div>
                 <div>
                   <p className="text-sm text-gray-800">Location</p>
-                  <p className="font-semibold">Bangkok, Thailand</p>
+                  <p className="font-semibold">{contactDetails.address}</p>
                 </div>
               </div>
             </div>
@@ -41,15 +43,7 @@ export default function Contact() {
             <div className="mt-8">
               <p className="text-sm text-gray-800 mb-3">Follow me on</p>
               <div className="flex gap-3">
-                <div className="w-12 h-12 bg-white/40 backdrop-blur rounded-full flex items-center justify-center hover:bg-white/60 transition-colors cursor-pointer">
-                  <Github className="w-6 h-6" />
-                </div>
-                <div className="w-12 h-12 bg-white/40 backdrop-blur rounded-full flex items-center justify-center hover:bg-white/60 transition-colors cursor-pointer">
-                  <Linkedin className="w-6 h-6" />
-                </div>
-                <div className="w-12 h-12 bg-white/40 backdrop-blur rounded-full flex items-center justify-center hover:bg-white/60 transition-colors cursor-pointer">
-                  <Mail className="w-6 h-6" />
-                </div>
+                <ContactLink showMail={false} />
               </div>
             </div>
           </div>

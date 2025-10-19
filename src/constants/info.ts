@@ -3,7 +3,7 @@ export const sections = [
     { id: "about", name: "About" },
     { id: "experience", name: "Experience" },
     { id: "projects", name: "Projects" },
-    // { id: "contact", name: "Contact" },
+    { id: "contact", name: "Contact" },
   ];
 
 export  const experiences = [
@@ -48,6 +48,7 @@ export  const experiences = [
         "Internal web application for my family business to checking customer credit",
       tags: ["React", "Firebase", "Tailwind CSS"],
       gradient: "from-blue-500 to-cyan-500",
+        link: "https://iproudch.github.io/chairak-blacklist/"
     },
     {
       title: "Expense Tracking",
@@ -55,7 +56,18 @@ export  const experiences = [
         "Expense tracking application that can track expenses and calculate expense per month",
       tags: ["React", "Firebase", "Daisy UI"],
       gradient: "from-purple-500 to-pink-500",
+      link: "https://iproudch.github.io/my-expense/"
     },
   ];
+
+export const contactLinks = {
+    github: "https://github.com/iproudch",
+    linkedin: "https://www.linkedin.com/in/chitchanok-lcr/",
+  };
+
+  export const contactDetails = {
+    email: "chitchanok.lcr@gmail.com",
+    address: "Bangphlat Bangkok, Thailand",
+  };
 
 

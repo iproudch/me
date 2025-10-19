@@ -1,4 +1,5 @@
 import { Calendar, Code, Database, Layout, MapPin, Server } from "lucide-react";
+import { contactDetails } from "../../constants/info";
 
 export default function AboutMe() {
   const skills = [
@@ -23,6 +24,16 @@ export default function AboutMe() {
       color: "bg-orange-500",
     },
   ];
+
+  const techs = [
+    "React",
+    "TypeScript",
+    "Node.js",
+    "Java",
+    "MongoDB",
+    "PostgreSQL",
+  ];
+
   return (
     <div className="space-y-8">
       <div className="bg-white rounded-2xl shadow-lg p-8 border border-gray-200">
@@ -56,7 +67,7 @@ export default function AboutMe() {
             <div className="flex gap-6 pt-4">
               <div className="flex items-center gap-2 text-gray-600">
                 <MapPin className="w-5 h-5 text-lime-500" />
-                <span>Nakhon Ratchasima, Thailand</span>
+                <span>{contactDetails.address}</span>
               </div>
               <div className="flex items-center gap-2 text-gray-600">
                 <Calendar className="w-5 h-5 text-lime-500" />
@@ -86,16 +97,9 @@ export default function AboutMe() {
                 Technologies
               </h4>
               <div className="flex flex-wrap gap-2">
-                {[
-                  "React",
-                  "TypeScript",
-                  "Node.js",
-                  "Java",
-                  "MongoDB",
-                  "PostgreSQL",
-                ].map((tech, i) => (
+                {techs.map((tech, index) => (
                   <span
-                    key={i}
+                    key={index}
                     className="px-3 py-1 bg-lime-100 text-lime-800 rounded-full text-sm font-medium"
                   >
                     {tech}
