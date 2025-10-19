@@ -10,8 +10,10 @@ export default function Projects() {
 
       <div className="grid grid-cols-3 gap-6">
         {projects.map((project, index) => (
-          <div
+          <a
             key={index}
+            href={project.link}
+            target="_blank"
             className="bg-white rounded-xl overflow-hidden shadow-md border border-gray-200 hover:shadow-xl transition-all hover:-translate-y-1 cursor-pointer"
           >
             <div
@@ -37,7 +39,7 @@ export default function Projects() {
                 ))}
               </div>
             </div>
-          </div>
+          </a>
         ))}
       </div>
     </div>
