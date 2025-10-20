@@ -24,6 +24,7 @@ export default function Contact() {
 
   const onSubmit = () => {
     if (!formRef.current) return;
+    console.log("PUBLIC_KEY", PUBLIC_KEY);
 
     emailjs
       .sendForm(SERVICE_ID, TEMPLATE_ID, formRef.current, PUBLIC_KEY)
