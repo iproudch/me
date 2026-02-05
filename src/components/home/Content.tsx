@@ -1,7 +1,7 @@
 import { useMemo } from "react";
 import { useRouteParameter } from "../../context/RouteParameter";
 import AboutMe from "../about/AboutMe";
-import Contact from "../contact/Contact";
+// import Contact from "../contact/Contact";
 import Experience from "../experience/Experience";
 import Projects from "../projects/Projects";
 import HomePage from "./HomePage";
@@ -19,8 +19,8 @@ export default function Content() {
         return <Experience />;
       case "projects":
         return <Projects />;
-      case "contact":
-        return <Contact />;
+      // case "contact":
+      //   return <Contact />;
       default:
         return <HomePage />;
     }
